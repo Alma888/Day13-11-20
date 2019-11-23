@@ -1,0 +1,31 @@
+# Day13-11-20
+一、Java中的BigInteger的用法
+
+1、赋值：(两种赋值形式)
+       BigInteger a=new BigInteger("1");
+       BigInteger b=BigInteger.valueOf(1);
+2、运算方法：
+    add(); 大整数相加
+         BigInteger a=new BigInteger("23");
+         BigInteger b=new BigInteger("34");
+         a.add(b);
+    subtract();  大整数相减
+    multiply();  大整数相乘
+    divide();    大整数相除取整
+    remainder(); 大整数取余
+    pow(); 
+       a.pow(b)=a^b; a的b次方
+    gcd();  最大公约数
+    abs();  绝对值
+    negate();  取反数
+    mod();  大整数取余
+       a.mod(b)=a%b=a.remainder(b);  
+3、BigInteger构造函数：
+     一般用到以下两种：
+     BigInteger(String val);  //将指定字符串转换为十进制表示形式；
+     BigInteger(String val,int radix); //将指定基数的BigInteger的字符串表示形式转换为BigInteger
+                                                         
+4、基本常量：
+      A = BigInteger.ONE 1
+      B = BigInteger.TEN 10
+      C = BigInteger.ZERO 0
