@@ -1,0 +1,21 @@
+# Day13-11-20
+Java中的ceil()方法
+     ceil()方法可以对一个数进行上舍入，返回值大于或等于给定的参数，类型为双精度浮点型。
+语法：double ceil(double d)
+     double ceil(float f)
+返回值：返回double类型，返回值大于或等于给定的参数。
+用法：Math.ceil(double x);
+功能：返回大于或者等于指定表达式的最小整数，即向上取整
+
+示例代码：
+public class Test{
+    public static void main(String[] args) {
+        double d=100.675;
+        float f=-90;
+        System.out.println(Math.ceil(d));//101.0
+        System.out.println(Math.ceil(f));//-90.0
+
+        System.out.println(Math.floor(d));//100.0
+        System.out.println(Math.floor(f));//-90.0
+    }
+}
